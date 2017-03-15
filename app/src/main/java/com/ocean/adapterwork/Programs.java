@@ -67,10 +67,9 @@ public class Programs extends AppCompatActivity {
         img.setImageResource(MyData.programoutput[row][col]);
 
         final CodeView cv = (CodeView) findViewById(R.id.code_view);
-cv.enableZoom(true);
-        cv.getSettings().setBuiltInZoomControls(true);
-        cv.getSettings().setDisplayZoomControls(false);
-        cv.getSettings().setSupportZoom(true);
+//        cv.getSettings().setBuiltInZoomControls(true);
+//        cv.getSettings().setDisplayZoomControls(false);
+        //cv.getSettings().setSupportZoom(true);
 //        cv.getSettings().setUseWideViewPort(false);
 //    //   double l= cv.getScale();
 //        cv.setInitialScale((int)(100*cv.getScale()));
@@ -82,12 +81,12 @@ cv.enableZoom(true);
 
 //Zoomy.Builder builder=new Zoomy.Builder(this).target(cv);
 //        builder.register();
-//        ZoomyConfig config=new ZoomyConfig();
 //
+//        ZoomyConfig config=new ZoomyConfig();
 //        config.setZoomAnimationEnabled(true);
 //        config.setImmersiveModeEnabled(true);
-//    Zoomy.setDefaultConfig(config);
-//
+//        Zoomy.setDefaultConfig(config);
+
 
 //     cv.getSettings().setBuiltInZoomControls(true);
 //        cv.getSettings().setDisplayZoomControls(false);
@@ -105,12 +104,43 @@ cv.enableZoom(true);
                     .setLanguage(HightlightJs.Languages.JAVA)
                     .setTheme(HightlightJs.Themes.AGATE)//AGATE
                     .setShowLineNumber(true)
-                    .setTextSize(15)
+                    .setTextSize(18)
                     .apply();
+
             cv.canZoomOut();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+
+//        gestureDetector = new GestureDetector(this, new GestureListener());
+//
+//        scaleGestureDetector = new ScaleGestureDetector(this, new ScaleGestureDetector.SimpleOnScaleGestureListener() {
+//            @Override
+//            public boolean onScale(ScaleGestureDetector detector) {
+//                float scale = 1 - detector.getScaleFactor();
+//
+//
+//                float prevScale = mScale;
+//                mScale += scale;
+//
+//                if (mScale < 0.1f) // Minimum scale condition:
+//                    mScale = 4.0f;
+//
+//                if (mScale > 10f) // Maximum scale condition:
+//                    mScale = 8f;
+//                ScaleAnimation scaleAnimation = new ScaleAnimation(1f / prevScale, 1f / mScale, 1f / prevScale, 1f / mScale, detector.getFocusX(), detector.getFocusY());
+//                scaleAnimation.setDuration(0);
+//                scaleAnimation.setFillAfter(true);
+//                cv.startAnimation(scaleAnimation);
+////                program_image.setMaxHeight(13);
+//                // scrollView.startAnimation(scaleAnimation);
+////                scrollView.requestDisallowInterceptTouchEvent(true);
+//                //   horizontalScrollView.startAnimation(scaleAnimation);
+//                return true;
+//            }
+//        });
 
     }
 
@@ -134,33 +164,7 @@ cv.enableZoom(true);
 ////        scrollView = (ScrollView) findViewById(R.id.sv);
 ////        horizontalScrollView = (HorizontalScrollView) findViewById(R.id.hsv);
 ////
-//        gestureDetector = new GestureDetector(this, new GestureListener());
-//
-//        scaleGestureDetector = new ScaleGestureDetector(this, new ScaleGestureDetector.SimpleOnScaleGestureListener() {
-//            @Override
-//            public boolean onScale(ScaleGestureDetector detector) {
-//                float scale = 1 - detector.getScaleFactor();
-//
-//
-//                float prevScale = mScale;
-//                mScale += scale;
-//
-//                if (mScale < 0.1f) // Minimum scale condition:
-//                    mScale = 0.1f;
-//
-//                if (mScale > 10f) // Maximum scale condition:
-//                    mScale = 10f;
-//                ScaleAnimation scaleAnimation = new ScaleAnimation(1f / prevScale, 1f / mScale, 1f / prevScale, 1f / mScale, detector.getFocusX(), detector.getFocusY());
-//                scaleAnimation.setDuration(0);
-//                scaleAnimation.setFillAfter(true);
-//program_image.startAnimation(scaleAnimation);
-////                program_image.setMaxHeight(13);
-//           // scrollView.startAnimation(scaleAnimation);
-////                scrollView.requestDisallowInterceptTouchEvent(true);
-//           //   horizontalScrollView.startAnimation(scaleAnimation);
-//                return true;
-//            }
-//        });
+
 //
 //        int row=MyData.pos;
 //        Intent intent = getIntent();
