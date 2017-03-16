@@ -16,7 +16,7 @@ public class MyData {
             "Methods or Functions.", "Classes and Objects.", "Inheritance.", "Packages.", "Interfaces.",
             "Exception Handling.", "Multi-Threading.", "Wrapper Classes.", "Math Lib. Functions.",
             "String and StringBuffer.", "Applets.", "Graphics.", "Event Handling.", "Abstract Window Toolkit.",
-            "Swing.", "Java Database Connectivity.", "Input/Output Streams.", "Remote Method Invocation.",
+            "Swing.", "Java Database Connectivity.", "Input/Output Streams.",
             "Network Programming.", "Generics.", "Collection Classes.", "Reflection.", "Nested Class.", "Java Beans."};
     static {
         programs[0]=new String[]{"Hello World","Compound Interest","Area Of Circle","Swapping Program"};
@@ -88,7 +88,12 @@ public class MyData {
      programoutput[12]=new int[]{R.drawable.wrapperdemooutput,R.drawable.wrapperdemo2output,R.drawable.wrapperdemo3output,R.drawable.wrapperdemo4output,R.drawable.wrapperdemo5output,R.drawable.wrapperdemo6output};
 //     programoutput[13]=new int[]{---------------------------------------};
      programoutput[14]=new int[]{R.drawable.stringconstrutoroutput,R.drawable.stringconcatoutput,R.drawable.charatexampleoutput,R.drawable.lengthexampleoutput};
-
+     programoutput[15]=new int[]{};
+     programoutput[16]=new int[]{};
+     programoutput[17]=new int[]{};
+     programoutput[18]=new int[]{};
+     programoutput[19]=new int[]{R.drawable.jframecomponentoutput,R.drawable.jbuttoncomponentoutput,R.drawable.jlabelcomponentoutput,R.drawable.jtextfieldcomponentoutput,R.drawable.jpasswordfieldcomponentoutput,R.drawable.jcheckboxcomponentoutput,R.drawable.jlistcomponentoutput,R.drawable.jcomboboxcomponentoutput};
+     programoutput[20]=new int[]{};
 
 
  }

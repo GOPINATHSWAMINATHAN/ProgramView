@@ -38,7 +38,6 @@ private String[] name;
         TextView textViewVersion;
         Context context;
 
-
         public MyViewHolder(View itemView) {
             super(itemView);
             context = itemView.getContext();

@@ -48,11 +48,6 @@ public class Programs extends AppCompatActivity {
     private float scale = 1f;
     private float mScale = 1f;
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,8 +62,8 @@ public class Programs extends AppCompatActivity {
         img.setImageResource(MyData.programoutput[row][col]);
 
         final CodeView cv = (CodeView) findViewById(R.id.code_view);
-//        cv.getSettings().setBuiltInZoomControls(true);
-//        cv.getSettings().setDisplayZoomControls(false);
+        cv.getSettings().setBuiltInZoomControls(true);
+        cv.getSettings().setDisplayZoomControls(false);
         //cv.getSettings().setSupportZoom(true);
 //        cv.getSettings().setUseWideViewPort(false);
 //    //   double l= cv.getScale();
