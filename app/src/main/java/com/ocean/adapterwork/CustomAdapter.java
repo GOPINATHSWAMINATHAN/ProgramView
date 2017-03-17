@@ -24,7 +24,7 @@ import static android.support.v4.content.ContextCompat.startActivity;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
     private static RecyclerView.Adapter adapter;
     private String[] dataSet;
-private String[] name;
+    private String[] name;
 
 
     private static CardView cardview;
