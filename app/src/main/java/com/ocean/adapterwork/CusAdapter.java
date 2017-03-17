@@ -48,8 +48,6 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.MyViewHolder> {
 
                     Log.d("RecyclerView", "onClick：" + getPosition());
                     Intent intent = null;
-
-
                     intent =  new Intent(context, Programs.class);
                     intent.putExtra("pos",getPosition());
 
