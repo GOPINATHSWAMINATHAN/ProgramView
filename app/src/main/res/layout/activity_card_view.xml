@@ -13,7 +13,7 @@
         android:layout_height="50dp"
         card_view:cardBackgroundColor="#ffffff"
         card_view:cardCornerRadius="4dp"
-        card_view:cardElevation="1dp"
+        card_view:cardElevation="3dp"
         card_view:cardUseCompatPadding="true"
         >
 

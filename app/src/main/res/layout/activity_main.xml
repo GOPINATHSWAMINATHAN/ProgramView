@@ -4,15 +4,16 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:padding="5dp"
+    android:background="@drawable/gradientlayouts"
 tools:context=".MainActivity"
     >
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_recycler_view"
-        android:background="@drawable/gradientlayouts"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
+        android:elevation="3dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 

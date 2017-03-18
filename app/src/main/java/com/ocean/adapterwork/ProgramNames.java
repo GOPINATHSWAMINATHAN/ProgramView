@@ -1,6 +1,7 @@
 package com.ocean.adapterwork;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -36,6 +37,10 @@ public class ProgramNames extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView tv = (TextView) findViewById(R.id.textViewprograms);
+        Typeface face = Typeface.createFromAsset(getAssets(),
+                "CaviarDreams_Italic.ttf");
+        tv.setTypeface(face);
         Intent intent = getIntent();
         int position = intent.getExtras().getInt("pos");
         myOnClickListener = new MyOnClickListener(this);
