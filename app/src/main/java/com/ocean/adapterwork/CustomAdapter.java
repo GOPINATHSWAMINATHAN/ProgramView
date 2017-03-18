@@ -2,6 +2,7 @@ package com.ocean.adapterwork;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -53,6 +54,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             });
 
             this.textViewVersion = (TextView) itemView.findViewById(R.id.textViewVersion);
+            TextView tv=(TextView)itemView.findViewById(R.id.textViewVersion);
+            Typeface regular=Typeface.createFromAsset(context.getAssets(),"quando.ttf");
+            tv.setTypeface(regular);
             this.recyclerView=(RecyclerView)itemView.findViewById(R.id.my_recycler_view);
 
     }
@@ -88,6 +92,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         });*/
         TextView textViewVersion = holder.textViewVersion;
         textViewVersion.setText(dataSet[listPosition].toString());
+
     }
 
     @Override

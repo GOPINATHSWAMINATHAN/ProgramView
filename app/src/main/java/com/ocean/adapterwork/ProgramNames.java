@@ -23,6 +23,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class ProgramNames extends AppCompatActivity  {
@@ -37,10 +39,6 @@ public class ProgramNames extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView tv = (TextView) findViewById(R.id.textViewprograms);
-        Typeface face = Typeface.createFromAsset(getAssets(),
-                "CaviarDreams_Italic.ttf");
-        tv.setTypeface(face);
         Intent intent = getIntent();
         int position = intent.getExtras().getInt("pos");
         myOnClickListener = new MyOnClickListener(this);
@@ -103,8 +101,9 @@ public class ProgramNames extends AppCompatActivity  {
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         RecyclerView recyclerView;
-        ImageView imageViewprogram,viewprogramoutput;
+        ImageView viewprogramoutput;
         Context context;
+        TextView getDescription;
 
 
         public MyViewHolder(View itemView) {
@@ -121,8 +120,8 @@ public class ProgramNames extends AppCompatActivity  {
                 }
             });
 
-           // this.imageViewprogram = (ImageView) itemView.findViewById(R.id.hellimage);
             this.viewprogramoutput=(ImageView)itemView.findViewById(R.id.output);
+            this.getDescription=(TextView)itemView.findViewById(R.id.program_description);
             this.recyclerView=(RecyclerView)itemView.findViewById(R.id.my_recycler_view);
 
         }

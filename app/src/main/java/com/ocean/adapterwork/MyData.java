@@ -11,6 +11,7 @@ public class MyData {
     static String sourceprograms[][]= new String[50][];
     static int programoutput[][]=new int[50][];
     static int pos;
+    static String programDescription[][]=new String[50][];
     static String[] nameArray={"Java Fundamental.", "Variables and Data Types.",
             "Operators and Expressions.", "Conditional Statements", "Looping Statements", "Arrays.",
             "Methods or Functions.", "Classes and Objects.", "Inheritance.", "Packages.", "Interfaces.",
@@ -18,6 +19,37 @@ public class MyData {
             "String and StringBuffer.", "Applets.", "Graphics.", "Event Handling.", "Abstract Window Toolkit.",
             "Swing.", "Java Database Connectivity.", "Input/Output Streams.",
             "Network Programming.", "Generics.", "Collection Classes.", "Reflection.", "Nested Class.", "Java Beans."};
+
+
+    static{
+        programDescription[0]=new String[]{"Program to display Hello World","Program to Calculate Compound Interest","Program to find Area of Circle","Swapping of Two Numbers"};
+        programDescription[1]=new String[]{"Program to declare the Variables","Program to explain the initialization of variable","Program to declare the variables with different data types","Program to explain the lifetime of a variable","Program to declare the constant variables"};
+        programDescription[2]=new String[]{"Program to explain the working of Arithmetic Operators","Program to explain Automatic Type Conversion","Program to explain the concept of Pre-fixed and Post-fixed Increment Operator","Program to explain the logical Bitwise Operator","Program to explain the Relational Operator","Program to explain the TypeConversion|Explicit TypeCasting"};
+        programDescription[3]=new String[]{"Program to explain the if-else statement","Program to explain if statement","Program to find the Leap Year","Program to explain the nested-if statement","Program to find the number is Odd/Even","Program to explain the switch statement","Program to understand the switch statement","Program to explain the nested else-if statement"};
+        programDescription[4]=new String[]{"Program to find the fibonacci series","Program to explain the for loop","Program to explain for-each loop","Program to find the palindrome","Program to find the Prime Number","Program to find the reverse of a number","Program to find the Strong Number","Program to explain the while loop","Program to explain the do-while loop","Counting the digits of a given number using looping statement"};
+        programDescription[5]=new String[]{"Program to display fibonacci series using array","Program to explain Bubble Sort","Program to explain Jagged Array","Program to explain Matrix Addition","Program to explain Selection Sort","Program to explain Two Dimensional Array","Program to explain an array with Scanner class"};
+        programDescription[6]=new String[]{"Method without return type and without parameters","Method without return type and with parameters","Method with return type and without parameters","Method with return type and with parameters","Program to explain the Final Variable","Program to explain the Final Method","Program to explain the Constructor"};
+        programDescription[7]=new String[]{"Program to explain the Constructor","Program to describe the Constructor","Program to explain the class and objects with Distance class","Program to explain passing object to Method","Program to explain the Constructor Overloading","Program to explain the this keyword","Program to describe the this keyword"};
+        programDescription[8]=new String[]{"Program to explain the Single Inheritance","Program to describe the Single Inheritance with ContainerWeight class","Program to explain the Multilevel inheritance","Program to explain the Method Overriding","Program to explain about the final class","Program to explain about the final method","Program to explain the super keyword","Program to explain the Hierarchical Inheritance"};
+        programDescription[9]=new String[]{"Program to use simple interface","Program to use field in interface","Program to explain partial implementation of an interface","Program to explain Inheritance of a interface from another interface","Program to explain Inheritance of a interface from multiple interface","Program to explain Dynamic method dispatch(dynamic binding) with interface","Program to implement a class from multiple interfaces"};
+        programDescription[10]=new String[]{"Program to explain the ArithmeticException","Program to explain try-catch block","Program to explain ChainedException","Program to explain Invalid-age Exception","Program to explain the final keyword","Program to explain Multiple catch block","Program to explain Multiple Exception","Program to explain Nested try-catch block","Program to explain throw keyword","Program to explain multiple catch"};
+        programDescription[11]=new String[]{"Program to explain creating a thread","Program to explain the currentThread() Method","Program to explain getName() & getPriority() method","Program to explain setPriority() Method","Program to explain setPriority() with Counter class","Program to explain unsynchronized thread","Program to explain sleep() method","Program to explain the thread priority","Program to explain creating thread using Runnable interface","Program to explain creating multiple thread"};
+        programDescription[12]=new String[]{"Program to use Simple Wrapper Class","Program to explain Auto-Boxing and Auto-Unboxing","Program to explain Wrapper class with function","Program to explain Wrapper class Boolean and Character","Program to use expression with Wrapper classes","Program to use Wrapper class with switch statement"};
+        programDescription[13]=new String[]{"Program to explain the pow() method from Math Lib. Functions","Program to explain the sqrt() method from Math Lib. Functions","Program to explain the ceil() method from Math Lib. Functions","Program to explain the floor() method from Math Lib. Functions","Program to explain the random() method from Math Lib. Functions"};
+        programDescription[14]=new String[]{"Program to explain String(char chars[],int startIndex,int numChars) constructor","Program to explain the String Constructor","Program to explain charAt() Method in String class","Program to explain the length() method","Program to explain equals() & equalsIgnoreCase() method","Program to explain getChars() method","Program to explain regionMatches() method","Program to explain split() method","Program to explain toLowerCase() method","Program to explain toUpperCase() method","Program to explain trim() method","Program to explain value() method","Program to explain the index() method","Program to explain String Buffer Constructor","Program to explain append() method","Program to explain capacity() method"};
+        programDescription[15]=new String[]{};
+        programDescription[16]=new String[]{};
+        programDescription[17]=new String[]{};
+        programDescription[18]=new String[]{};
+        programDescription[19]=new String[]{};
+        programDescription[20]=new String[]{};
+        programDescription[21]=new String[]{};
+        programDescription[22]=new String[]{};
+        programDescription[23]=new String[]{};
+        programDescription[24]=new String[]{};
+        programDescription[25]=new String[]{};
+        programDescription[26]=new String[]{};
+    }
     static {
         programs[0]=new String[]{"Hello World","Compound Interest","Area Of Circle","Swapping Program"};
         programs[1]=new String[]{"Variable Declaration","Initializing Variables","DataTypeDemo","DataTypes","Variables LifeTime","Constant Variables"};

@@ -18,10 +18,7 @@ Button getStarted;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
  setContentView(R.layout.activity_splash_screen);
-        TextView tv = (TextView) findViewById(R.id.textViewprograms);
-        Typeface face = Typeface.createFromAsset(getAssets(),
-                "CaviarDreams_Italic.ttf");
-        tv.setTypeface(face);
+//
        // ActionBar actionBar = getActionBar();
         //actionBar.hide();
     getStarted=(Button)findViewById(R.id.getstartedbutton);

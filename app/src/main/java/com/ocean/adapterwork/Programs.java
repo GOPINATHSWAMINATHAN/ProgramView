@@ -18,6 +18,7 @@ import android.webkit.WebSettings;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.ZoomControls;
 
 import com.ablanco.zoomy.Zoomy;
@@ -29,6 +30,7 @@ import java.io.InputStreamReader;
 
 import br.tiagohm.codeview.CodeView;
 import br.tiagohm.codeview.HightlightJs;
+import br.tiagohm.codeview.SyntaxHighlighter;
 
 public class Programs extends AppCompatActivity {
     ZoomControls image_zoom;
@@ -64,6 +66,10 @@ public class Programs extends AppCompatActivity {
         final CodeView cv = (CodeView) findViewById(R.id.code_view);
         cv.getSettings().setBuiltInZoomControls(true);
         cv.getSettings().setDisplayZoomControls(false);
+
+        TextView programdescription=(TextView)findViewById(R.id.program_description);
+        programdescription.setText(MyData.programDescription[row][col]);
+
         //cv.getSettings().setSupportZoom(true);
 //        cv.getSettings().setUseWideViewPort(false);
 //    //   double l= cv.getScale();
@@ -101,8 +107,6 @@ public class Programs extends AppCompatActivity {
                     .setShowLineNumber(true)
                     .setTextSize(18)
                     .apply();
-
-            cv.canZoomOut();
         } catch (IOException e) {
             e.printStackTrace();
         }

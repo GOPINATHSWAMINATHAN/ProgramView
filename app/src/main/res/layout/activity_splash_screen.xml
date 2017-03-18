@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_splash_screen"
     android:background="@drawable/programmersss"
     android:layout_height="match_parent"
@@ -7,36 +9,52 @@
 
     <Button
         android:id="@+id/getstartedbutton"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:text="Get Started"
         android:textStyle="italic"
         android:background="@drawable/buttonshapes"
         android:backgroundTint="#68adf1"
-        android:layout_below="@+id/imageprogram"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="29dp"
-        android:layout_marginTop="62dp"
-        android:onClick="get_started"/>
+        android:onClick="get_started"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="181dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:textStyle="italic"
         android:text="@string/address"
         android:textColor="#ffffff"
         android:paddingLeft="10dp"
         android:paddingRight="20dp"
-        android:layout_marginBottom="23dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageprogram"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="174dp"
         android:src="@drawable/dd"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

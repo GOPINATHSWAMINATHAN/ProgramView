@@ -2,6 +2,7 @@ package com.ocean.adapterwork;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -58,10 +59,13 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.MyViewHolder> {
                     context.startActivity(intent);
                 }
             });
+            TextView tv=(TextView)itemView.findViewById(R.id.textViewVersion);
+    Typeface regular=Typeface.createFromAsset(context.getAssets(),"quando.ttf");
+         tv.setTypeface(regular);
 
             this.textViewVersion = (TextView) itemView.findViewById(R.id.textViewVersion);
             this.recyclerView=(RecyclerView)itemView.findViewById(R.id.my_recycler_view);
-
+//
         }
     }
 
@@ -78,6 +82,7 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.MyViewHolder> {
                 .inflate(R.layout.activity_card_view,parent,false);
         view.setOnClickListener(MainActivity.myOnClickListener);
         MyViewHolder myViewHolder = new MyViewHolder(view);
+
         return myViewHolder;
     }
 
@@ -91,8 +96,10 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.MyViewHolder> {
                 Toast.makeText(view.getContext(), "Recycle Click" + listPosition, Toast.LENGTH_SHORT).show();
             }
         });*/
+
         TextView textViewVersion = holder.textViewVersion;
         textViewVersion.setText(dataSet[listPosition].toString());
+
     }
 
     @Override
