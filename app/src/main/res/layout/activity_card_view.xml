@@ -40,8 +40,7 @@
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:textColor="#123"
-                    android:text=""
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:text="" />
 
             </LinearLayout>
         </LinearLayout>

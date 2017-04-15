@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/mainscrollview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/gradientlayouts"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
     tools:context="com.ocean.adapterwork.Programs">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/program_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
             android:layout_marginTop="10dp"
             android:textSize="15dp"
-            android:textStyle="bold|normal"
-            android:layout_marginBottom="3dp"/>
-    <br.tiagohm.codeview.CodeView
-        android:id="@+id/code_view"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            android:textStyle="bold|normal" />
 
-
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        >
-        <TextView
+        <br.tiagohm.codeview.CodeView
+            android:id="@+id/code_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="OUTPUT"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:layout_marginBottom="10dp"
-            android:textColorHighlight="@color/colorPrimaryDark"/>
-    <HorizontalScrollView
-        android:layout_gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/output"
-        android:layout_gravity="center"
-        android:layout_marginLeft="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-    </HorizontalScrollView>
-    </LinearLayout>
+            android:layout_gravity="center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="OUTPUT"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

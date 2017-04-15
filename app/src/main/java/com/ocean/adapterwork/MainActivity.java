@@ -1,5 +1,4 @@
 package com.ocean.adapterwork;
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity  {
       //  layoutManager.setMeasuredDimension(200,300);
         recyclerView.setLayoutManager(layoutManager);
        // recyclerView.setItemAnimator(new DefaultItemAnimator());
-
 
 //recyclerView.addOnItemTouchListener(new RecyclerItemListener());
 

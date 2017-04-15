@@ -30,9 +30,6 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.MyViewHolder> {
 
     private static CardView cardview;
 
-
-
-
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         RecyclerView recyclerView;
@@ -51,11 +48,6 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.MyViewHolder> {
                     Intent intent = null;
                     intent =  new Intent(context, Programs.class);
                     intent.putExtra("pos",getPosition());
-
-
-
-
-
                     context.startActivity(intent);
                 }
             });
@@ -65,7 +57,7 @@ public class CusAdapter extends RecyclerView.Adapter<CusAdapter.MyViewHolder> {
 
             this.textViewVersion = (TextView) itemView.findViewById(R.id.textViewVersion);
             this.recyclerView=(RecyclerView)itemView.findViewById(R.id.my_recycler_view);
-//
+
         }
     }
 
