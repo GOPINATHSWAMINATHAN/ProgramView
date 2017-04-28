@@ -6,7 +6,15 @@ public class VariableDemo {
     static int m = 100; //static variable  
 
     void methodOne() {
-        int n = 90; //local variable  
+        int n = 90; //local variable
+        System.out.println(data);
+        System.out.println(m);
+        System.out.println(n);
+    }
+
+    public static void main(String argsp[]) {
+
+        new VariableDemo().methodOne();
     }
 }
 

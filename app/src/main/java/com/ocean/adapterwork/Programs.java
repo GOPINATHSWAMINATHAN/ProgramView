@@ -64,8 +64,8 @@ public class Programs extends AppCompatActivity {
         img.setImageResource(MyData.programoutput[row][col]);
 
         final CodeView cv = (CodeView) findViewById(R.id.code_view);
-        cv.getSettings().setBuiltInZoomControls(true);
-        cv.getSettings().setDisplayZoomControls(false);
+//        cv.getSettings().setBuiltInZoomControls(true);
+//        cv.getSettings().setDisplayZoomControls(false);
 
         TextView programdescription=(TextView)findViewById(R.id.program_description);
         programdescription.setText(MyData.programDescription[row][col]);

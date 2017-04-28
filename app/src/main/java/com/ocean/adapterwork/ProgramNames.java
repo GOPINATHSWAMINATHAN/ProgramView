@@ -76,56 +76,56 @@ public class ProgramNames extends AppCompatActivity  {
 
 
     }
+//
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        super.onCreateOptionsMenu(menu);
+//        //getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        super.onOptionsItemSelected(item);
+////        if (item.getItemId() == R.id.add_item) {
+////            //check if any items to add
+////            if (removedItems.size() != 0) {
+////                addRemovedItemToList();
+////            } else {
+////                Toast.makeText(this, "Nothing to add", Toast.LENGTH_SHORT).show();
+////            }
+////        }
+//        return true;
+//    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        //getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        super.onOptionsItemSelected(item);
-//        if (item.getItemId() == R.id.add_item) {
-//            //check if any items to add
-//            if (removedItems.size() != 0) {
-//                addRemovedItemToList();
-//            } else {
-//                Toast.makeText(this, "Nothing to add", Toast.LENGTH_SHORT).show();
-//            }
+//    public static class MyViewHolder extends RecyclerView.ViewHolder {
+//
+//        RecyclerView recyclerView;
+//        ImageView viewprogramoutput;
+//        Context context;
+//        TextView getDescription;
+//
+//
+//        public MyViewHolder(View itemView) {
+//            super(itemView);
+//            context = itemView.getContext();
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                      Log.d("RecyclerViews", "onClicks：" + getPosition());
+//                    Intent intent = null;
+//                    intent =  new Intent(context, Programs.class);
+//                    intent.putExtra("pos",getPosition());
+//                    context.startActivity(intent);
+//                }
+//            });
+//
+//            this.viewprogramoutput=(ImageView)itemView.findViewById(R.id.output);
+//            this.getDescription=(TextView)itemView.findViewById(R.id.program_description);
+//            this.recyclerView=(RecyclerView)itemView.findViewById(R.id.my_recycler_view);
+//
 //        }
-        return true;
-    }
-
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
-
-        RecyclerView recyclerView;
-        ImageView viewprogramoutput;
-        Context context;
-        TextView getDescription;
-
-
-        public MyViewHolder(View itemView) {
-            super(itemView);
-            context = itemView.getContext();
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                      Log.d("RecyclerViews", "onClicks：" + getPosition());
-                    Intent intent = null;
-                    intent =  new Intent(context, Programs.class);
-                    intent.putExtra("pos",getPosition());
-                    context.startActivity(intent);
-                }
-            });
-
-            this.viewprogramoutput=(ImageView)itemView.findViewById(R.id.output);
-            this.getDescription=(TextView)itemView.findViewById(R.id.program_description);
-            this.recyclerView=(RecyclerView)itemView.findViewById(R.id.my_recycler_view);
-
-        }
-    }
+//    }
 
 
 }
