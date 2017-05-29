@@ -41,6 +41,7 @@ public class ProgramNames extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
         int position = intent.getExtras().getInt("pos");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         myOnClickListener = new MyOnClickListener(this);
         MyData.pos=position;
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -75,6 +76,19 @@ public class ProgramNames extends AppCompatActivity  {
         }
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 //
 //    @Override

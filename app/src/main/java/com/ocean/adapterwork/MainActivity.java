@@ -1,6 +1,8 @@
 package com.ocean.adapterwork;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         myOnClickListener = new MyOnClickListener(this);
 
         recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -66,19 +68,28 @@ public class MainActivity extends AppCompatActivity  {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        super.onOptionsItemSelected(item);
-//        if (item.getItemId() == R.id.add_item) {
-//            //check if any items to add
-//            if (removedItems.size() != 0) {
-//                addRemovedItemToList();
-//            } else {
-//                Toast.makeText(this, "Nothing to add", Toast.LENGTH_SHORT).show();
-//            }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        super.onOptionsItemSelected(item);
+//
+//        switch(item.getItemId())
+//        {
+//            case android.R.id.home:
+//                this.finish();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
 //        }
-        return true;
-    }
+//
+////        if (item.getItemId() == R.id.add_item) {
+////            //check if any items to add
+////            if (removedItems.size() != 0) {
+////                addRemovedItemToList();
+////            } else {
+////                Toast.makeText(this, "Nothing to add", Toast.LENGTH_SHORT).show();
+////            }
+////        }
+//    }
 
 
 

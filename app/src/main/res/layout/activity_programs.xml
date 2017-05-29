@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="3dp"
             android:layout_marginTop="10dp"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:textStyle="bold|normal" />
 
         <br.tiagohm.codeview.CodeView
@@ -41,7 +41,7 @@
                 android:layout_marginBottom="10dp"
                 android:text="OUTPUT"
                 android:textColorHighlight="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <HorizontalScrollView

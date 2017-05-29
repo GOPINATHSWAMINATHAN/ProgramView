@@ -11,6 +11,7 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:foreground="@drawable/custom_bg"
         card_view:cardBackgroundColor="#ffffff"
         card_view:cardCornerRadius="4dp"
         card_view:cardElevation="3dp"
