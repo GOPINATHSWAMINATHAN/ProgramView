@@ -1,4 +1,4 @@
-package com.ocean.java.nestedclass;
+package com.gopinath.java.nestedclass;
 
 class OuterTwenty {
 

@@ -1,4 +1,4 @@
-package com.ocean.java.swing;
+package com.gopinath.java.swing;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public class ActionEventTest implements ActionListener {
 
     ActionEventTest() {
-        JFrame f = new JFrame("OCEAN ACADEMY");
+        JFrame f = new JFrame("Java Programs");
         JButton b = new JButton("Message");
 
         f.add(b);

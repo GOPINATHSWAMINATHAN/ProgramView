@@ -1,4 +1,4 @@
-package com.ocean.java.swingwithjdbc;
+package com.gopinath.java.swingwithjdbc;
 
 import java.awt.*;
 import java.awt.event.*;

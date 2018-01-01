@@ -1,4 +1,4 @@
-package com.ocean.java.multithreading;
+package com.gopinath.java.multithreading;
 
 class RunnableDemo implements Runnable {
     
@@ -14,8 +14,8 @@ class CreatingThreadRunnableDemo {
 
     public static void main(String args[]) {
         RunnableDemo a = new RunnableDemo();
-        Thread t1 = new Thread(a, "Ocean");
-        Thread t2 = new Thread(a, "Academy");
+        Thread t1 = new Thread(a, "Java");
+        Thread t2 = new Thread(a, "Programs");
         t1.start();
         t2.start();
         System.out.println(" Hello !!! ");

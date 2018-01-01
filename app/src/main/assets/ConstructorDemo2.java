@@ -1,4 +1,4 @@
-package com.ocean.java.classobjects;
+package com.gopinath.java.classobjects;
 
 public class ConstructorDemo2 {
 

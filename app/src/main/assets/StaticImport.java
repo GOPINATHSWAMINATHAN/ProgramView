@@ -1,4 +1,4 @@
-package com.ocean.java.Package;
+package com.gopinath.java.Package;
 
 import static java.lang.Math.sqrt;
 

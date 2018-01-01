@@ -1,4 +1,4 @@
-package com.ocean.java.swing;
+package com.gopinath.java.swing;
 import java.awt.BorderLayout;
 import javax.swing.*;
 import javax.swing.event.*;

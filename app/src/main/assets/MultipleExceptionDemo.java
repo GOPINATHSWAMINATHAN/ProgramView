@@ -1,4 +1,4 @@
-package com.ocean.java.exceptionhandling;
+package com.gopinath.java.exceptionhandling;
 
 public class MultipleExceptionDemo {
 

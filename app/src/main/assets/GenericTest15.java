@@ -1,4 +1,4 @@
-package com.ocean.java.generics;
+package com.gopinath.java.generics;
 
 class NonGen {
 
@@ -30,7 +30,7 @@ class Gen<T> extends NonGen {
 public class GenericTest15 {
 
     public static void main(String args[]) {
-        Gen<String> w = new Gen<String>("BIIT", 100);
+        Gen<String> w = new Gen<String>("JAVA", 100);
 
         System.out.print(w.getObject() + " ");
         System.out.println(w.getNumber());

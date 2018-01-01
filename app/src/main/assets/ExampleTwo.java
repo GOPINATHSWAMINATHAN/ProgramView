@@ -1,4 +1,4 @@
-package com.ocean.java.reflections;
+package com.gopinath.java.reflections;
 //to call private method from super class
 
 import java.lang.reflect.InvocationTargetException;

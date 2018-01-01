@@ -1,4 +1,4 @@
-package com.ocean.java.packages;
+package com.gopinath.java.packages;
 
 public class ImportPackage1 {
 

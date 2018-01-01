@@ -1,4 +1,4 @@
-package com.ocean.java.iostreams;
+package com.gopinath.java.iostreams;
 
 import java.io.File;
 

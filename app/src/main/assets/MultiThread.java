@@ -1,9 +1,9 @@
-package com.ocean.java.multithreading;
+package com.gopinath.java.multithreading;
 class Academy extends Thread {
 
     public void run() {
         for (int i = 1; i <= 5; i++) {
-            System.out.println("Ocean");
+            System.out.println("Always");
         }
     }
 }
@@ -11,7 +11,7 @@ class B extends Thread {
 
     public void run() {
         for (int i = 1; i <= 5; i++) {
-            System.out.println("Academy");
+            System.out.println("Coding");
         }
     }
 }
@@ -19,7 +19,7 @@ class C extends Thread {
 
     public void run() {
         for (int i = 1; i <= 5; i++) {
-            System.out.println("Pondicherry");
+            System.out.println("Coding");
         }
     }
 }

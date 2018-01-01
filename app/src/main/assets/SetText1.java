@@ -1,4 +1,4 @@
-package com.ocean.java.collections;
+package com.gopinath.java.collections;
 
 import java.util.Iterator;
 import java.util.Set;

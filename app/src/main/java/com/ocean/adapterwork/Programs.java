@@ -26,6 +26,9 @@ import android.widget.ZoomControls;
 
 import com.ablanco.zoomy.Zoomy;
 import com.ablanco.zoomy.ZoomyConfig;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -52,13 +55,17 @@ public class Programs extends AppCompatActivity {
     ScaleGestureDetector scaleGestureDetector;
     private float scale = 1f;
     private float mScale = 1f;
-
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_programs);
 
+        MobileAds.initialize(this,"ca-app-pub-5466017327223057~8087757714");
 
+        mAdView = (AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         int row = MyData.pos;
         Intent intent = getIntent();
         int col = intent.getExtras().getInt("pos");

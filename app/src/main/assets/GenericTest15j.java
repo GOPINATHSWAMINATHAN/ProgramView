@@ -1,4 +1,4 @@
-package com.ocean.java.generics;
+package com.gopinath.java.generics;
 
 interface MinMax<T extends Comparable<T>> {
 

@@ -1,4 +1,4 @@
-package com.ocean.java.packages;
+package com.gopinath.java.packages;
 
  class BalanceImport {
 
@@ -21,7 +21,7 @@ package com.ocean.java.packages;
 public class BalanceImport1 {
 
     public static void main(String args[]) {
-        BalanceImport ob = new BalanceImport("Khushal", 234.56);
+        BalanceImport ob = new BalanceImport("Gopinath", 234.56);
         ob.show();
     }
 

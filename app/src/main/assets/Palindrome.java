@@ -1,4 +1,4 @@
-package com.ocean.java.looping;
+package com.gopinath.java.looping;
 
 public class Palindrome {
 

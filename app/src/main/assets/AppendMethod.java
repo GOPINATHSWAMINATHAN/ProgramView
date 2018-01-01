@@ -1,4 +1,4 @@
-package com.ocean.java.string;
+package com.gopinath.java.string;
 
 public class AppendMethod {
 

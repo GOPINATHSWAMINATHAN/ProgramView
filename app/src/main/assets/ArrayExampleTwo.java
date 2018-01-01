@@ -1,4 +1,4 @@
-package com.ocean.java.arrays;
+package com.gopinath.java.arrays;
 
 import java.util.Scanner;
 

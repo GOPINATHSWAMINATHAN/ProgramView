@@ -1,4 +1,4 @@
-package com.ocean.java.fundamentals;
+package com.gopinath.java.fundamentals;
 
 public class PerfectNumber {
 

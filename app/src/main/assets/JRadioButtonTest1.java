@@ -1,4 +1,4 @@
-package com.ocean.java.swing;
+package com.gopinath.java.swing;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

@@ -1,4 +1,4 @@
-package com.ocean.java.interfaces;
+package com.gopinath.java.interfaces;
 
 public interface E {
 

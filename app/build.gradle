@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.ocean.adapterwork"
         minSdkVersion 17
@@ -31,5 +31,6 @@ dependencies {
     compile 'com.android.support:cardview-v7:25.3.1'
     compile 'com.github.tiagohm:CodeView:0.1.4'
     compile 'com.ablanco.zoomy:zoomy:1.0.0'
+    compile 'com.google.android.gms:play-services-ads:11.6.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }

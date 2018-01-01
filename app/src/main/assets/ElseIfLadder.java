@@ -1,4 +1,4 @@
-package com.ocean.java.conditional;
+package com.gopinath.java.conditional;
 
 import java.sql.ResultSet;
 

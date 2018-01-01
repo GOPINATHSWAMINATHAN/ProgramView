@@ -1,4 +1,4 @@
-package com.ocean.java.generics;
+package com.gopinath.java.generics;
 
 class TwoGen<T, V> {
 
@@ -27,7 +27,7 @@ class TwoGen<T, V> {
 public class GenericTest2 {
 
     public static void main(String args[]) {
-        TwoGen<Integer, String> tgObj = new TwoGen<Integer, String>(100, "BIIT");
+        TwoGen<Integer, String> tgObj = new TwoGen<Integer, String>(100, "Java");
         tgObj.showTypes();
 
         int v = tgObj.getob1();
@@ -36,7 +36,7 @@ public class GenericTest2 {
         String str = tgObj.getob2();
         System.out.println("Value: " + str);
 
-        TwoGen<String, Double> tgObj1 = new TwoGen<String, Double>("Bhilai", 123.45);
+        TwoGen<String, Double> tgObj1 = new TwoGen<String, Double>("Gopinath", 123.45);
         tgObj1.showTypes();
 
         String s1 = tgObj1.getob1();

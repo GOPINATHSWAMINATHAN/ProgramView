@@ -1,4 +1,4 @@
-package com.ocean.java.reflections;
+package com.gopinath.java.reflections;
 //load class into Class.forName()
 class ExampleOne {
     

@@ -1,4 +1,4 @@
-package com.ocean.java.collections;
+package com.gopinath.java.collections;
 
 import java.util.LinkedList;
 import java.util.ListIterator;

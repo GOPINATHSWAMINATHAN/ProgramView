@@ -1,4 +1,4 @@
-package com.ocean.java.reflections;
+package com.gopinath.java.reflections;
 
 class Student {
 
@@ -43,8 +43,8 @@ public class GetReflection {
 
     public static void main(String[] args) {
         Student s = new Student();
-        s.setName("Karthik");
-        s.setAddress("Pondicherry");
+        s.setName("Java");
+        s.setAddress("Coding");
         s.setMarks(98);
         s.setGrade("S");
         System.out.println(s.getName() + " "

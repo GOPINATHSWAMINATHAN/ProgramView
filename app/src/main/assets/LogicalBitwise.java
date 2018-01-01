@@ -1,4 +1,4 @@
-package com.ocean.java.operators;
+package com.gopinath.java.operators;
 
 public class LogicalBitwise {
 

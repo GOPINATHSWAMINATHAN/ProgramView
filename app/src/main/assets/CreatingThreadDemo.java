@@ -1,4 +1,4 @@
-package com.ocean.java.multithreading;
+package com.gopinath.java.multithreading;
 
 class A extends Thread {
 
@@ -16,8 +16,8 @@ class A extends Thread {
 class CreatingThreadDemo {
 
     public static void main(String args[]) {
-        A a1 = new A("Ocean");
-        A a2 = new A("Academy");
+        A a1 = new A("Java");
+        A a2 = new A("Programs");
         a1.start();
         a2.start();
         System.out.println(" Hai !!! ");

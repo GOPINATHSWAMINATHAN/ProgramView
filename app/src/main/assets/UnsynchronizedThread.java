@@ -1,4 +1,4 @@
-package com.ocean.java.multithreading;
+package com.gopinath.java.multithreading;
 class Shared {
 
     void justDoIt(String s) {
@@ -25,9 +25,9 @@ class MyThread extends Thread {
 class UnSynchronizedThread {
     public static void main(String args[]) {
         Shared sr = new Shared();
-        MyThread ob1 = new MyThread(sr, "Ocean");
-        MyThread ob2 = new MyThread(sr, "Academy");
-        MyThread ob3 = new MyThread(sr, "Pondicherry.");
+        MyThread ob1 = new MyThread(sr, "Java");
+        MyThread ob2 = new MyThread(sr, "Programs");
+        MyThread ob3 = new MyThread(sr, "Learning.");
 
         try {
             ob1.join();

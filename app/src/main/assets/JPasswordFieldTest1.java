@@ -1,4 +1,4 @@
-package com.ocean.java.swing;
+package com.gopinath.java.swing;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;

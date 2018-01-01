@@ -1,4 +1,4 @@
-package com.ocean.java.jdbc;
+package com.gopinath.java.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

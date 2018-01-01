@@ -1,4 +1,4 @@
-package com.ocean.java.methods;
+package com.gopinath.java.methods;
 
 import java.util.Scanner;
 //Method with returntype and without parameters

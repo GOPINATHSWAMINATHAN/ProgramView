@@ -1,4 +1,4 @@
-package com.ocean.java.reflections;
+package com.gopinath.java.reflections;
 //getSuperclass() method 
 //isInterface() method
 public class ExampleThree {

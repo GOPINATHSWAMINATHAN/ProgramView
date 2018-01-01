@@ -1,4 +1,4 @@
-package com.ocean.java.inheritance;
+package com.gopinath.java.inheritance;
 
 class Area {
 

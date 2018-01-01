@@ -12,27 +12,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.MobileAds;
+
 public class SplashScreen extends Activity {
 Button getStarted;
+TextView tt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
  setContentView(R.layout.activity_splash_screen);
-//
+
+
+ //
        // ActionBar actionBar = getActionBar();
         //actionBar.hide();
     getStarted=(Button)findViewById(R.id.getstartedbutton);
-        getStarted.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(event.getAction() == MotionEvent.ACTION_UP) {
-                    getStarted.setBackgroundColor(Color.WHITE);
-                } else if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                    getStarted.setBackgroundColor(Color.WHITE);
-                }
-                return false;
-            }
-        });
+tt=(TextView)findViewById(R.id.steve);
+        Typeface regular=Typeface.createFromAsset(getApplicationContext().getAssets(),"ziperhead.TTF");
+        getStarted.setTypeface(regular);
+        tt.setTypeface(regular);
     getStarted.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {

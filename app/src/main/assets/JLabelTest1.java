@@ -1,4 +1,4 @@
-package com.ocean.java.swing;
+package com.gopinath.java.swing;
 
 import java.awt.FlowLayout;
 import javax.swing.JFrame;
@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 public class JLabelTest1 extends JFrame {
 
     public JLabelTest1() {
-        setTitle("Ocean Academy");
+        setTitle("Learn Java");
         setSize(250, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());

@@ -1,4 +1,4 @@
-package com.ocean.java.mathlibfunctions;
+package com.gopinath.java.mathlibfunctions;
 
 public class Msqrt {
 

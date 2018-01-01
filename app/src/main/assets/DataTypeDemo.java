@@ -1,4 +1,4 @@
-package com.ocean.java.variables;
+package com.gopinath.java.variables;
 
 public class DataTypeDemo {
 

@@ -1,4 +1,4 @@
-package com.ocean.java.javabeans;
+package com.gopinath.java.javabeans;
 
 import java.awt.*;
 import java.awt.event.*;

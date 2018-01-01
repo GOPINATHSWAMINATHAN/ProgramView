@@ -1,4 +1,4 @@
-package com.ocean.java.packages;
+package com.gopinath.java.packages;
 
  class AccountBalance {
     String name;
@@ -21,9 +21,9 @@ public class AccountBalance1 {
     public static void main(String args[]) {
         AccountBalance current[] = new AccountBalance[3];
 
-        current[0] = new AccountBalance("Ocean", 123.45);
-        current[1] = new AccountBalance("Academy", 345.12);
-        current[2] = new AccountBalance("Pondicherry,", -12.34);
+        current[0] = new AccountBalance("Java", 123.45);
+        current[1] = new AccountBalance("Programs", 345.12);
+        current[2] = new AccountBalance("Learning,", -12.34);
 
         for (int i = 0; i < 3; i++) {
             current[i].show();

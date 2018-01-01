@@ -1,4 +1,4 @@
-package com.ocean.java.multithreading;
+package com.gopinath.java.multithreading;
 
 class Age extends Thread {
 
