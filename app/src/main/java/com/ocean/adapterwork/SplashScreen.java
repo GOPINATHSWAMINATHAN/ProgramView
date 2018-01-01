@@ -30,7 +30,7 @@ TextView tt;
 tt=(TextView)findViewById(R.id.steve);
         Typeface regular=Typeface.createFromAsset(getApplicationContext().getAssets(),"ziperhead.TTF");
         getStarted.setTypeface(regular);
-        tt.setTypeface(regular);
+        //tt.setTypeface(regular);
     getStarted.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
